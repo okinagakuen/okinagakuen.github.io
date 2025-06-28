@@ -9,8 +9,138 @@
   <link rel="icon" href="/file/icon_color.png" type="image/png">
   <link rel="apple-touch-icon" href="/file/icon_color.png">
 
-  <!-- CSS 読み込み -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 基本リセット */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ヘッダー */
+    .site-header {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .school-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .school-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .header-right .nav-link {
+      margin-left: 20px;
+      font-size: 14px;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .header-right .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .purple-line {
+      width: 100%;
+      background-color: #4B0082;
+    }
+
+    .purple-line.thin {
+      height: 3px;
+    }
+
+    .purple-line.thick {
+      height: 6px;
+    }
+
+    /* ヘッダー下の画像 */
+    .heading-image img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* コンテンツ */
+    .site-content {
+      flex: 1;
+      padding: 40px 20px;
+    }
+
+    .school-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .school-links a {
+      display: block;
+      width: 200px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .school-links img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .school-links img:hover {
+      transform: scale(1.05);
+    }
+
+    /* フッター */
+    .site-footer {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 600px) {
+      .school-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -37,16 +167,16 @@
   <main class="site-content">
     <div class="school-links">
       <a href="kinder">
-        <img src="/file/kinder.PNG" alt="幼稚園" class="school-thumb">
+        <img src="/file/kinder.PNG" alt="幼稚園">
       </a>
       <a href="primary">
-        <img src="/file/primary.PNG" alt="小学校" class="school-thumb">
+        <img src="/file/primary.PNG" alt="小学校">
       </a>
       <a href="junior">
-        <img src="/file/junior.PNG" alt="中学校" class="school-thumb">
+        <img src="/file/junior.PNG" alt="中学校">
       </a>
       <a href="senior">
-        <img src="/file/senior.png" alt="高等学校" class="school-thumb">
+        <img src="/file/senior.png" alt="高等学校">
       </a>
     </div>
   </main>
