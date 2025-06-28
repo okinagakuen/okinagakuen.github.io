@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>翁名学園</title>
 
-  <!-- ファビコン / iOS アイコン -->
   <link rel="icon" href="/file/icon_color.png" type="image/png">
   <link rel="apple-touch-icon" href="/file/icon_color.png">
 
   <style>
-    /* 基本リセット */
     * {
       margin: 0;
       padding: 0;
@@ -83,14 +81,30 @@
       height: 6px;
     }
 
-    /* ヘッダー下の画像 */
+    /* 見出し画像とテキスト */
+    .heading-image {
+      position: relative;
+    }
+
     .heading-image img {
       width: 100%;
       display: block;
       object-fit: cover;
     }
 
-    /* コンテンツ */
+    .heading-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      font-family: "serif", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS P明朝", "MS Mincho", serif;
+      font-size: 20px;
+      line-height: 1.5;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      white-space: pre-line;
+    }
+
+    /* メイン */
     .site-content {
       flex: 1;
       padding: 40px 20px;
@@ -115,7 +129,6 @@
     .school-links img {
       width: 100%;
       height: auto;
-      border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s ease;
     }
@@ -160,6 +173,9 @@
 
   <section class="heading-image">
     <img src="/file/heading.jpg" alt="翁名学園の風景">
+    <div class="heading-text">
+      子供たちよ<br>強く、逞しくなれ
+    </div>
   </section>
 
   <div class="purple-line thick"></div>
