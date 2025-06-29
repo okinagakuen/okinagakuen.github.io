@@ -4,220 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>翁名学園</title>
-
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="/file/icon_color.png" type="image/png" />
   <link rel="apple-touch-icon" href="/file/icon_color.png" />
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: sans-serif;
-      background-color: #fff;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    .site-header {
-      background-color: white;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: relative;
-      z-index: 10;
-    }
-
-    .header-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .header-left {
-      display: flex;
-      align-items: center;
-    }
-
-    .school-icon {
-      width: 40px;
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .school-name {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .header-right .nav-link {
-      margin-left: 20px;
-      font-size: 14px;
-      color: #555;
-      text-decoration: none;
-    }
-
-    .header-right .nav-link:hover {
-      text-decoration: underline;
-    }
-
-    .purple-line {
-      width: 100%;
-      background-color: #4B0082;
-    }
-
-    .purple-line.thin {
-      height: 3px;
-    }
-
-    .purple-line.thick {
-      height: 6px;
-    }
-
-    .heading-image {
-      position: relative;
-    }
-
-    .heading-image img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-    }
-
-    .heading-text {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      color: white;
-      font-family: "serif", "ヒラギノ明朝 ProN", "MS 明朝", serif;
-      font-size: 20px;
-      line-height: 1.5;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-      white-space: pre-line;
-    }
-
-    .site-content {
-      flex: 1;
-      padding: 40px 20px;
-      background-color: #ffffff;
-    }
-
-    .school-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .school-links a {
-      display: block;
-      width: 200px;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    .school-links img {
-      width: 100%;
-      height: auto;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease;
-    }
-
-    .school-links img:hover {
-      transform: scale(1.05);
-    }
-
-    /* ▼ TOPICS ▼ */
-    .topics-section {
-      background-color: #f2f2f2;
-      padding: 40px 20px;
-    }
-
-    .topics-title {
-      font-weight: bold;
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    .topics-underline {
-      width: 60px;
-      height: 3px;
-      background-color: #4B0082;
-      margin: 0 auto 30px;
-    }
-
-    .topics-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .topic-box {
-      background-color: white;
-      width: 280px;
-      padding: 15px;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-
-    .topic-label {
-      display: inline-block;
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 12px;
-      color: white;
-      background-color: #800080; /* 学校行事: 紫 */
-      margin-bottom: 8px;
-    }
-
-    .topic-date {
-      font-size: 13px;
-      color: #333;
-      margin-bottom: 8px;
-    }
-
-    .topic-image {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      margin-bottom: 8px;
-    }
-
-    .topic-title {
-      font-size: 14px;
-      font-weight: normal;
-      color: #111;
-    }
-
-    /* フッター */
-    .site-footer {
-      background-color: #f5f5f5;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 14px;
-      color: #888;
-      border-top: 1px solid #ddd;
-    }
-
-    @media (max-width: 900px) {
-      .topics-grid {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
@@ -261,23 +50,25 @@
     <div class="topics-grid">
       <!-- 1 -->
       <div class="topic-box">
-        <div class="topic-label">学校行事</div>
+        <div class="topic-label kindergarten">幼稚園</div>
         <div class="topic-date">2025.04.01</div>
-        <img src="/file/photo/IMG_1210.png" alt="入学式" class="topic-image" />
+        <img src="/file/photo/IMG_1210.png" alt="写真" class="topic-image" />
         <div class="topic-title">2025年度 入学式</div>
       </div>
+
       <!-- 2 -->
       <div class="topic-box">
-        <div class="topic-label">学校行事</div>
+        <div class="topic-label primary">小学校</div>
         <div class="topic-date">2025.04.01</div>
-        <img src="/file/photo/IMG_1210.png" alt="入学式" class="topic-image" />
+        <img src="/file/photo/IMG_1210.png" alt="写真" class="topic-image" />
         <div class="topic-title">2025年度 入学式</div>
       </div>
+
       <!-- 3 -->
       <div class="topic-box">
-        <div class="topic-label">学校行事</div>
+        <div class="topic-label event">学校行事</div>
         <div class="topic-date">2025.04.01</div>
-        <img src="/file/photo/IMG_1210.png" alt="入学式" class="topic-image" />
+        <img src="/file/photo/IMG_1210.png" alt="写真" class="topic-image" />
         <div class="topic-title">2025年度 入学式</div>
       </div>
     </div>
