@@ -1,0 +1,218 @@
+/* --- 共通 --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- ヘッダー --- */
+.site-header {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.school-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.school-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-right .nav-link {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+}
+
+.header-right .nav-link:hover {
+  text-decoration: underline;
+}
+
+.purple-line {
+  width: 100%;
+  background-color: #4B0082;
+}
+
+.purple-line.thin {
+  height: 3px;
+}
+
+.purple-line.thick {
+  height: 6px;
+}
+
+/* --- ヘッダー下画像とテキスト --- */
+.heading-image {
+  position: relative;
+}
+
+.heading-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.heading-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: "serif", "ヒラギノ明朝 ProN", "MS 明朝", serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  white-space: pre-line;
+}
+
+/* --- コンテンツエリア（学校リンク） --- */
+.site-content {
+  flex: 1;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.school-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.school-links a {
+  display: block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.school-links img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.school-links img:hover {
+  transform: scale(1.05);
+}
+
+/* --- TOPICS セクション --- */
+.topics-section {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+}
+
+.topics-title {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.topics-underline {
+  width: 60px;
+  height: 3px;
+  background-color: #4B0082;
+  margin: 0 auto 30px;
+}
+
+.topics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topic-box {
+  background-color: white;
+  width: 260px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.topic-label {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+/* --- カテゴリ別ラベル色 --- */
+.topic-label.kindergarten { background-color: #c0506f; }
+.topic-label.primary      { background-color: #3fa76f; }
+.topic-label.junior       { background-color: #204090; }
+.topic-label.senior       { background-color: #da8b00; }
+.topic-label.event        { background-color: #800080; }
+.topic-label.other        { background-color: #555555; }
+
+.topic-date {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.topic-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.topic-title {
+  font-size: 14px;
+  font-weight: normal;
+  color: #111;
+}
+
+/* --- フッター --- */
+.site-footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #ddd;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 900px) {
+  .topics-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
