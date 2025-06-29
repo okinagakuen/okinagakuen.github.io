@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>翁名学園</title>
 
-  <link rel="icon" href="/file/icon_color.png" type="image/png">
-  <link rel="apple-touch-icon" href="/file/icon_color.png">
+  <link rel="icon" href="/file/icon_color.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/file/icon_color.png" />
 
   <style>
     * {
@@ -135,7 +135,7 @@
       transform: scale(1.05);
     }
 
-    /* ▼ TOPICS セクション ▼ */
+    /* ▼ TOPICS ▼ */
     .topics-section {
       background-color: #f2f2f2;
       padding: 40px 20px;
@@ -155,10 +155,18 @@
       margin: 0 auto 30px;
     }
 
+    .topics-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
     .topic-box {
       background-color: white;
-      max-width: 400px;
-      margin: 0 auto 30px;
+      width: 280px;
       padding: 15px;
       border-radius: 6px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -203,8 +211,8 @@
       border-top: 1px solid #ddd;
     }
 
-    @media (max-width: 600px) {
-      .school-links {
+    @media (max-width: 900px) {
+      .topics-grid {
         flex-direction: column;
         align-items: center;
       }
@@ -215,7 +223,7 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="header-left">
-        <img src="/file/icon.png" alt="翁名学園アイコン" class="school-icon">
+        <img src="/file/icon.png" alt="翁名学園アイコン" class="school-icon" />
         <span class="school-name">学校法人 翁名学園</span>
       </div>
       <nav class="header-right">
@@ -228,9 +236,10 @@
   </header>
 
   <section class="heading-image">
-    <img src="/file/heading.jpg" alt="翁名学園の風景">
+    <img src="/file/heading.jpg" alt="翁名学園の風景" />
     <div class="heading-text">
-      子供たちよ<br>強く、逞しくなれ
+      子供たちよ<br />
+      強く、逞しくなれ
     </div>
   </section>
 
@@ -238,30 +247,44 @@
 
   <main class="site-content">
     <div class="school-links">
-      <a href="kinder"><img src="/file/kinder.PNG" alt="幼稚園"></a>
-      <a href="primary"><img src="/file/primary.PNG" alt="小学校"></a>
-      <a href="junior"><img src="/file/junior.PNG" alt="中学校"></a>
-      <a href="senior"><img src="/file/senior.png" alt="高等学校"></a>
+      <a href="kinder"><img src="/file/kinder.PNG" alt="幼稚園" /></a>
+      <a href="primary"><img src="/file/primary.PNG" alt="小学校" /></a>
+      <a href="junior"><img src="/file/junior.PNG" alt="中学校" /></a>
+      <a href="senior"><img src="/file/senior.png" alt="高等学校" /></a>
     </div>
   </main>
 
-  <!-- ▼ TOPICS セクション ▼ -->
   <section class="topics-section">
     <h2 class="topics-title">TOPICS</h2>
     <div class="topics-underline"></div>
 
-    <div class="topic-box">
-      <div class="topic-label">学校行事</div>
-      <div class="topic-date">2025.04.01</div>
-      <img src="/file/photo/IMG_1210.png" alt="入学式の写真" class="topic-image">
-      <div class="topic-title">2025年度 入学式</div>
+    <div class="topics-grid">
+      <!-- 1 -->
+      <div class="topic-box">
+        <div class="topic-label">学校行事</div>
+        <div class="topic-date">2025.04.01</div>
+        <img src="/file/photo/IMG_1210.png" alt="入学式" class="topic-image" />
+        <div class="topic-title">2025年度 入学式</div>
+      </div>
+      <!-- 2 -->
+      <div class="topic-box">
+        <div class="topic-label">学校行事</div>
+        <div class="topic-date">2025.04.01</div>
+        <img src="/file/photo/IMG_1210.png" alt="入学式" class="topic-image" />
+        <div class="topic-title">2025年度 入学式</div>
+      </div>
+      <!-- 3 -->
+      <div class="topic-box">
+        <div class="topic-label">学校行事</div>
+        <div class="topic-date">2025.04.01</div>
+        <img src="/file/photo/IMG_1210.png" alt="入学式" class="topic-image" />
+        <div class="topic-title">2025年度 入学式</div>
+      </div>
     </div>
   </section>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      © 翁名学園
-    </div>
+    <div class="footer-inner">© 翁名学園</div>
   </footer>
 </body>
 </html>
