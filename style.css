@@ -3,11 +3,13 @@ body {
     font-family: sans-serif;
 }
 
+
 header {
     background: linear-gradient(to bottom, #ffffff, #cccccc); /* 白からグレーへのグラデーション */
-    padding: 20px;
+    padding: 10px; /* ヘッダー上下のpaddingを半分に */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .header-container {
     display: flex;
@@ -15,30 +17,35 @@ header {
     align-items: center; /* 要素を垂直方向の中央に揃える */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px; /* 左右のpaddingは維持 */
 }
+
 
 .site-title {
     margin: 0;
-    font-size: 2em;
+    font-size: 1.5em; /* タイトルのフォントサイズを少し小さく */
     color: #333;
 }
 
+
 .search-bar input {
-    padding: 8px;
+    padding: 5px; /* 検索バーのpaddingを小さく */
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 200px;
+    width: 150px; /* 幅を少し小さく */
 }
 
+
 .search-bar button {
-    padding: 8px 12px;
+    padding: 5px 8px; /* 検索ボタンのpaddingを小さく */
     border: none;
     background-color: #555;
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 0.9em; /* ボタンのフォントサイズを少し小さく */
 }
+
 
 .search-bar button:hover {
     background-color: #333;
